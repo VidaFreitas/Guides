@@ -7,9 +7,9 @@ namespace Guides
         static void Main(string[] args)
         {
             var texto = "Este texto é um teste";
-            Console.WriteLine(texto.Equals("Este texto é um teste"));
-            Console.WriteLine(texto.Equals("O texto é um teste"));
-            Console.WriteLine(texto.Equals("Este texto é um Teste"));
+            Console.WriteLine(texto.IndexOf("um"));
+            Console.WriteLine(texto.IndexOf("é"));
+            Console.WriteLine(texto.LastIndexOf("s"));
         }
     }
 }
