@@ -6,11 +6,12 @@ namespace Guides
     {
         static void Main(string[] args)
         {
-            var id = Guid.NewGuid();
-            id.ToString();
+            var price = 10.2;
+            // var texto = "O preço do produto é " + price + "penas na promção";
+            // var texto = string.Format("O preço do produto é {0} apenas na promoção", price);
+            var texto = $"O preço do produto é {price} apenas na promoção";
 
-            id = new Guid("5ff5b871-91db-47d4-9406-c45eb800776e");
-            Console.WriteLine(id.ToString().Substring(0, 8));
+            Console.WriteLine(texto);
         }
     }
 }
